@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+    /* font-family: 'Bodoni Moda', serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #ffcccb;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* font-family: 'Overlock' ; */
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ff6666;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.close {
+    position: fixed;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        color: #555;
+        cursor: pointer;
+        transition: color 0.3s;
+}
+
+.close:hover {
+    color: #ff6666;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff6666;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #ff6666;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e05a5a;
+}
+
+/* Link Styles */
+a {
+    color: #ff6666;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #cc4e4e;
+}
+
+/* Contact Us Section */
+#contact-us {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#contact-us h2 {
+    text-align: center;
+    color: #ff6666;
+    margin-bottom: 20px;
+}
+
+#contact-us div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact-us div > div {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+#contact-us form {
+    padding: 20px;
+    border-right: 1px solid #eee;
+}
+
+#contact-us form label {
+    margin-top: 10px;
+}
+
+#contact-us form button {
+    margin-top: 20px;
+}
+
+#contact-us form input,
+#contact-us form textarea {
+    margin-top: 5px;
+}
+
+#contact-us div:last-child {
+    border: none;
+}
+
+/* Contact Us Section */
+#contact-us div {
+    display: block; /* Ensures all content is in a single block */
+}
+
+#contact-us div > div {
+    margin: 0 auto; /* Centers the content */
+    padding: 10px 0; /* Adds vertical spacing between sections */
+}
+
+/* Address and Info Section */
+#contact-us .info-section .address_all{
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: left; /* Ensures left alignment for text */
+}
+#contact-us .info-section .address_all{
+    display: flex;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+    gap: 70px;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: left; /* Ensures left alignment for text */
+}
+
+#contact-us .info-section h3 {
+    color: #ff6666;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space below the title */
+    margin-left: 25px;
+}
+#contact-us .info-section .address {
+    margin: 0 0 25px 0; /* Adds spacing between blocks of text */
+    line-height: 1.8; /* Improves readability */
+}
+#contact-us .info-section .add_title {
+    font-weight: bold;
+}
+#contact-us .info-section p {
+    /* margin: 0 0 5px 0; Adds spacing between blocks of text */
+    line-height: 1.8; /* Improves readability */
+}
+#contact-us .info-section p {
+    margin: 0 0 5px 0; /* Adds spacing between blocks of text */
+    line-height: 1.8; /* Improves readability */
+}
+
+
+#contact-us .info-section span {
+    display: block; /* Forces each line to appear below the previous */
+    margin-bottom: 5px; /* Adds spacing between lines */
+    word-break: break-word; /* Prevents overflowing */
+    white-space: normal;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcccb;
+    color: #333;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
